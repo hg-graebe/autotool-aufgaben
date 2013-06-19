@@ -1,0 +1,1283 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix at: <http://hgg.ontowiki.net/autotool/> .
+@prefix att: <http://hgg.ontowiki.net/autotool/Type/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://hgg.ontowiki.net/autotool/Type/>
+    a owl:Ontology ;
+    rdfs:comment "Aus src_Inter_Collector.hs extrahiert und mit Beispielen von Frank Loebe abgeglichen" ;
+    rdfs:label "Autotool Exercises Ontology" .
+
+<http://hgg.ontowiki.net/autotool/Type/Acceptor-Grammatik.Quiz>
+    at:createCommand "Grammatik.Akzeptor.acceptor" ;
+    a at:Item ;
+    rdfs:label "Acceptor-Grammatik.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Acceptor-NPDA.Check>
+    at:createCommand "NPDA.Inter.make" ;
+    a at:Item ;
+    rdfs:label "Acceptor-NPDA.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Acceptor-NPDA.Quiz>
+    at:createCommand "NPDA.Inter2.make" ;
+    a at:Item ;
+    rdfs:label "Acceptor-NPDA.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Acceptor-Turing.Quiz>
+    at:createCommand "Turing.Make.acceptor" ;
+    a at:Item ;
+    rdfs:label "Acceptor-Turing.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Machine.Numerical.Fun>
+    a at:Item ;
+    rdfs:comment "Item \"Berechnungsmodelle/Primitiv rekursive Funktionen (alt)/Machine.Numerical.Fun\" fehlt" ;
+    rdfs:label "Machine.Numerical.Fun" .
+
+<http://hgg.ontowiki.net/autotool/Type/Machine.Numerical.RAM>
+    a at:Item ;
+    rdfs:comment "Item \"Berechnungsmodelle/Machine.Numerical.RAM\" fehlt" ;
+    rdfs:label "Machine.Numerical.RAM" .
+
+<http://hgg.ontowiki.net/autotool/Type/Machine.Numerical.Turing-Maschine>
+    a at:Item ;
+    rdfs:comment "Item \"Berechnungsmodelle/Machine.Numerical.Turing-Maschine (als Computer)\" fehlt" ;
+    rdfs:label "Machine.Numerical.Turing-Maschine" .
+
+<http://hgg.ontowiki.net/autotool/Type/Algebraic_Graph.Check>
+    at:createCommand "$ Algebraic.Central.make Algebraic_Graph" ;
+    a at:Item ;
+    rdfs:label "Algebraic_Graph.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Algebraic_Graph.Quiz>
+    at:createCommand "$ Algebraic.Central.make Algebraic_STGraph" ;
+    a at:Item ;
+    rdfs:label "Algebraic_Graph.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Algebraic_Integer.Check>
+    at:createCommand "$ Algebraic2.Central.make Algebraic_Integer" ;
+    a at:Item ;
+    rdfs:label "Algebraic_Integer.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Algebraic_Integer.Quiz>
+    at:createCommand "$ Algebraic2.Quiz.make Algebraic_Integer" ;
+    a at:Item ;
+    rdfs:label "Algebraic_Integer.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Algebraic_Relation.Check>
+    at:createCommand "$ Algebraic2.Central.make Algebraic_Relation" ;
+    a at:Item ;
+    rdfs:label "Algebraic_Relation.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Algebraic_Relation.Quiz>
+    at:createCommand "$ Algebraic2.Quiz.make Algebraic_Relation" ;
+    a at:Item ;
+    rdfs:label "Algebraic_Relation.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Algebraic_STGraph.Check>
+    at:createCommand "$ Algebraic.Quiz.make Algebraic_Graph" ;
+    a at:Item ;
+    rdfs:label "Algebraic_STGraph.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Algebraic_STGraph.Quiz>
+    at:createCommand "$ Algebraic.Quiz.make Algebraic_STGraph" ;
+    a at:Item ;
+    rdfs:label "Algebraic_STGraph.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Algebraic_Set.Check>
+    at:createCommand "$ Algebraic2.Central.make Algebraic_Set" ;
+    a at:Item ;
+    rdfs:label "Algebraic_Set.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Algebraic_Set.Quiz>
+    at:createCommand "$ Algebraic2.Quiz.make Algebraic_Set" ;
+    a at:Item ;
+    rdfs:label "Algebraic_Set.Quiz" .
+
+att:Algorithmen
+    at:hasSubHeading att:Sortiernetze, att:Sortierprogramme, att:String-Matching ;
+    a at:Heading ;
+    rdfs:label "Algorithmen" .
+
+att:Aufgaben
+    at:hasSubHeading att:Algorithmen, att:Automaten_und_Formale_Sprachen, att:Berechnungsmodelle, att:Codierung_Kompression_Verschluesselung, att:Datenstrukturen, att:Graphen, att:Kombinatorik, att:Kombinatorische_Logik, att:Lambda-Kalkuel, att:Logik, att:Mengen_und_Relationen, att:NP-vollstaendige_Probleme, att:Programmierung, att:Rest, att:Terme_Ersetzungssysteme, att:Zahlensysteme, att:Zahlentheorie ;
+    a at:Heading ;
+    rdfs:label "Aufgaben" .
+
+att:Aussagenlogik
+    at:hasSubHeading att:CNF_Optimize, att:CNF_SAT, att:Hilbert, att:Resolution, att:Umformen_alt, att:Umformen_neu ;
+    a at:Heading ;
+    rdfs:label "Aussagenlogik" .
+
+att:Automaten_und_Formale_Sprachen
+    at:hasSubHeading att:Grammatiken, att:Kellerautomaten, att:Nerode-Kongruenz, att:Pumping-Lemma, att:Turing-Maschine_als_Akzeptor, att:endliche_Automaten, att:regulaere_Ausdruecke ;
+    a at:Heading ;
+    rdfs:label "Automaten und Formale Sprachen" .
+
+att:Baeume
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/Baum.AVL.Quiz>, <http://hgg.ontowiki.net/autotool/Type/Baum.Binary.Quiz>, <http://hgg.ontowiki.net/autotool/Type/Baum.Reconstruct.Check>, <http://hgg.ontowiki.net/autotool/Type/Baum.Reconstruct.Quiz>, <http://hgg.ontowiki.net/autotool/Type/Baum.RedBlack.Quiz>, <http://hgg.ontowiki.net/autotool/Type/Baum.ZweiDrei.Quiz> ;
+    a at:Heading ;
+    rdfs:label "Bäume" .
+
+<http://hgg.ontowiki.net/autotool/Type/Baum.AVL.Quiz>
+    at:createCommand "Baum.AVL.make_quiz" ;
+    a at:Item ;
+    rdfs:label "Baum.AVL.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Baum.Binary.Quiz>
+    at:createCommand "Baum.Binary.make_quiz" ;
+    a at:Item ;
+    rdfs:label "Baum.Binary.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Baum.Reconstruct.Check>
+    at:createCommand "Baum.Reconstruct.make_fixed" ;
+    a at:Item ;
+    rdfs:label "Baum.Reconstruct.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Baum.Reconstruct.Quiz>
+    at:createCommand "Baum.Reconstruct.make_quiz" ;
+    a at:Item ;
+    rdfs:label "Baum.Reconstruct.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Baum.RedBlack.Quiz>
+    at:createCommand "Baum.RedBlack.make_quiz" ;
+    a at:Item ;
+    rdfs:label "Baum.RedBlack.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Baum.ZweiDrei.Quiz>
+    at:createCommand "Baum.ZweiDrei.make_quiz" ;
+    a at:Item ;
+    rdfs:label "Baum.ZweiDrei.Quiz" .
+
+att:Berechnungsmodelle
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/CM.Brainfuck>, <http://hgg.ontowiki.net/autotool/Type/CM.JVM>, <http://hgg.ontowiki.net/autotool/Type/CM.RAM>, <http://hgg.ontowiki.net/autotool/Type/CM.RM>, <http://hgg.ontowiki.net/autotool/Type/CM.Turing>, <http://hgg.ontowiki.net/autotool/Type/Program.Cexp.Interface> ;
+    at:hasSubHeading att:Peano-Zahlen_und_Folds, att:Primitiv_rekursive_Funktionen, att:Programme_mit_Arrays, att:Programme_mit_Listen_Stacks_Queues ;
+    a at:Heading ;
+    rdfs:label "Berechnungsmodelle" .
+
+<http://hgg.ontowiki.net/autotool/Type/Binpack.FFD.Check>
+    at:createCommand "Binpack.FFD.make_fixed" ;
+    a at:Item ;
+    rdfs:label "Binpack.FFD.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Binpack.Interface.Check>
+    at:createCommand "Binpack.Interface.make_fixed" ;
+    a at:Item ;
+    rdfs:label "Binpack.Interface.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Binpack.Interface.Quiz>
+    at:createCommand "Binpack.Interface.make_quiz" ;
+    a at:Item ;
+    rdfs:label "Binpack.Interface.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Boolean.Check>
+    at:createCommand "Boolean.Instance.make" ;
+    a at:Item ;
+    rdfs:label "Boolean.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Boolean.Quiz>
+    at:createCommand "Boolean.Quiz.make" ;
+    a at:Item ;
+    rdfs:label "Boolean.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Boolean2.Check>
+    at:createCommand "Boolean2.Instance.make" ;
+    a at:Item ;
+    rdfs:label "Boolean2.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Boolean2.Quiz>
+    at:createCommand "Boolean2.Quiz.make" ;
+    a at:Item ;
+    rdfs:label "Boolean2.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/CFG.Quiz>
+    at:createCommand "Grammatik.CF.Interface.make" ;
+    a at:Item ;
+    rdfs:comment "veraltet" ;
+    rdfs:label "CFG.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/CFG2.Check>
+    at:createCommand "Grammatik.CF.Interface2.make" ;
+    a at:Item ;
+    rdfs:label "CFG2.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/CL.Find.Check>
+    at:createCommand "$ CL.Find.make_fixed" ;
+    a at:Item ;
+    rdfs:label "CL.Find.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/CM.Brainfuck>
+    at:createCommand "Brainfuck.Make.computer" ;
+    a at:Item ;
+    rdfs:label "CM.Brainfuck" .
+
+<http://hgg.ontowiki.net/autotool/Type/CM.JVM>
+    at:createCommand "JVM.Make.make" ;
+    a at:Item ;
+    rdfs:label "CM.JVM" .
+
+<http://hgg.ontowiki.net/autotool/Type/CM.RAM>
+    at:createCommand "RAM.Make.make" ;
+    a at:Item ;
+    rdfs:label "CM.RAM" .
+
+<http://hgg.ontowiki.net/autotool/Type/CM.RM>
+    at:createCommand "RM.Make.make" ;
+    a at:Item ;
+    rdfs:label "CM.RM" .
+
+<http://hgg.ontowiki.net/autotool/Type/CM.Turing>
+    at:createCommand "Turing.Make.computer" ;
+    a at:Item ;
+    rdfs:label "CM.Turing" .
+
+att:CNF_Optimize
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/CNF_Optimize.Check> ;
+    a at:Heading ;
+    rdfs:label "CNF-Optimize" .
+
+<http://hgg.ontowiki.net/autotool/Type/CNF_Optimize.Check>
+    at:createCommand "CNF.Optimize.make_fixed" ;
+    a at:Item ;
+    rdfs:label "CNF_Optimize.Check" .
+
+att:CNF_SAT
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/CNF_SAT.Check>, <http://hgg.ontowiki.net/autotool/Type/CNF_SAT.Quiz> ;
+    a at:Heading ;
+    rdfs:label "CNF-SAT" .
+
+<http://hgg.ontowiki.net/autotool/Type/CNF_SAT.Check>
+    at:createCommand "SAT.SAT.make_fixed" ;
+    a at:Item ;
+    rdfs:label "CNF_SAT.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/CNF_SAT.Quiz>
+    at:createCommand "SAT.SAT.make_quiz" ;
+    a at:Item ;
+    rdfs:label "CNF_SAT.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Code.BW.dec.Check>
+    at:createCommand "$ Code.Class.dec BW.Burrows_Wheeler ( \"abracadabra\", 2 )" ;
+    a at:Item ;
+    rdfs:label "Code.BW.dec.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Code.BW.dec.Quiz>
+    at:createCommand "$ Code.Quiz.dec BW.Burrows_Wheeler" ;
+    a at:Item ;
+    rdfs:label "Code.BW.dec.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Code.BW.enc.Check>
+    at:createCommand "$ Code.Class.enc BW.Burrows_Wheeler" ;
+    a at:Item ;
+    rdfs:label "Code.BW.enc.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Code.BW.enc.Quiz>
+    at:createCommand "$ Code.Quiz.enc BW.Burrows_Wheeler" ;
+    a at:Item ;
+    rdfs:label "Code.BW.enc.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Code.Hamming>
+    at:createCommand "Code.Hamming.make" ;
+    a at:Item ;
+    rdfs:label "Code.Hamming" .
+
+<http://hgg.ontowiki.net/autotool/Type/Code.Huffman.Boiler.Check>
+    at:createCommand "Code.Huffman.Boiler.make_fixed" ;
+    a at:Item ;
+    rdfs:label "Code.Huffman.Boiler.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Code.Huffman.Boiler.Quiz>
+    at:createCommand "Code.Huffman.Boiler.make_quiz" ;
+    a at:Item ;
+    rdfs:label "Code.Huffman.Boiler.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Code.MTW.dec.Quiz>
+    at:createCommand "$ Code.Quiz.dec MTF.Move_To_Front" ;
+    a at:Item ;
+    rdfs:label "Code.MTW.dec.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Code.MTW.enc.Quiz>
+    at:createCommand "$ Code.Quiz.enc MTF.Move_To_Front" ;
+    a at:Item ;
+    rdfs:label "Code.MTW.enc.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Code.Nocode.Check>
+    at:createCommand "Code.Nocode.make_fixed" ;
+    a at:Item ;
+    rdfs:label "Code.Nocode.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Code.Nocode.Quiz>
+    at:createCommand "Code.Nocode.make_quiz" ;
+    a at:Item ;
+    rdfs:label "Code.Nocode.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Code.Nonprefix.Check>
+    at:createCommand "Code.Nonprefix.make_fixed" ;
+    a at:Item ;
+    rdfs:label "Code.Nonprefix.Check" .
+
+att:Codierung
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/Code.BW.dec.Check>, <http://hgg.ontowiki.net/autotool/Type/Code.BW.dec.Quiz>, <http://hgg.ontowiki.net/autotool/Type/Code.BW.enc.Check>, <http://hgg.ontowiki.net/autotool/Type/Code.BW.enc.Quiz>, <http://hgg.ontowiki.net/autotool/Type/Code.Hamming>, <http://hgg.ontowiki.net/autotool/Type/Code.Huffman.Boiler.Check>, <http://hgg.ontowiki.net/autotool/Type/Code.Huffman.Boiler.Quiz>, <http://hgg.ontowiki.net/autotool/Type/Code.MTF.dec.Quiz>, <http://hgg.ontowiki.net/autotool/Type/Code.MTF.enc.Quiz>, <http://hgg.ontowiki.net/autotool/Type/Code.Nocode.Check>, <http://hgg.ontowiki.net/autotool/Type/Code.Nocode.Quiz>, <http://hgg.ontowiki.net/autotool/Type/Code.Nonprefix.Check> ;
+    a at:Heading ;
+    rdfs:label "Codierung" .
+
+att:Codierung_Kompression_Verschluesselung
+    at:hasSubHeading att:Codierung, att:Kompression, att:Verschluesselung ;
+    a at:Heading ;
+    rdfs:label "Codierung, Kompression, Verschlüsselung" .
+
+<http://hgg.ontowiki.net/autotool/Type/Collatz.Inverse.Check>
+    at:createCommand "Collatz.Inverse.make" ;
+    a at:Item ;
+    rdfs:label "Collatz.Inverse.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Collatz.Inverse.Quiz>
+    at:createCommand "Collatz.Inverse.qmake" ;
+    a at:Item ;
+    rdfs:label "Collatz.Inverse.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Collatz.Long.Check>
+    at:createCommand "Collatz.Long.make" ;
+    a at:Item ;
+    rdfs:label "Collatz.Long.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Collatz.Plain.Check>
+    at:createCommand "Collatz.Plain.make" ;
+    a at:Item ;
+    rdfs:label "Collatz.Plain.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Collatz.Plain.Quiz>
+    at:createCommand "Collatz.Plain.qmake" ;
+    a at:Item ;
+    rdfs:label "Collatz.Plain.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Compress.LZ77.Check>
+    at:createCommand "$ Code.Compress.make_fixed Code.LZ.Lempel_Ziv_77" ;
+    a at:Item ;
+    rdfs:label "Compress.LZ77.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Compress.LZ77.Quiz>
+    at:createCommand "$ Code.Compress.make_quiz Code.LZ.Lempel_Ziv_77" ;
+    a at:Item ;
+    rdfs:label "Compress.LZ77.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Compress.LZW.Quiz>
+    at:createCommand "$ Code.Compress.make_quiz Code.LZ.Lempel_Ziv_Welch" ;
+    a at:Item ;
+    rdfs:label "Compress.LZW.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Convert_To_Exp.Check>
+    at:createCommand "Exp.Convert.make" ;
+    a at:Item ;
+    rdfs:label "Convert_To_Exp.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Convert_To_Exp.Quiz>
+    at:createCommand "Exp.Convert.qmake" ;
+    a at:Item ;
+    rdfs:label "Convert_To_Exp.Quiz" .
+
+att:Convert_To_NFA
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/Convert_To_NFA.Check>, <http://hgg.ontowiki.net/autotool/Type/Convert_To_NFA.Quiz> ;
+    a at:Heading ;
+    rdfs:label "Convert to NFA" .
+
+<http://hgg.ontowiki.net/autotool/Type/Convert_To_NFA.Check>
+    at:createCommand "NFA.Convert.make" ;
+    a at:Item ;
+    rdfs:label "Convert_To_NFA.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Convert_To_NFA.Quiz>
+    at:createCommand "NFA.Convert.qmake" ;
+    a at:Item ;
+    rdfs:label "Convert_To_NFA.Quiz" .
+
+att:DFA_Compress
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/DFA_Compress.Check>, <http://hgg.ontowiki.net/autotool/Type/DFA_Compress.Quiz> ;
+    a at:Heading ;
+    rdfs:label "DFA Compress" .
+
+<http://hgg.ontowiki.net/autotool/Type/DFA_Compress.Check>
+    at:createCommand "NFA.Compress.Inter.make_fixed" ;
+    a at:Item ;
+    rdfs:label "DFA_Compress.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/DFA_Compress.Quiz>
+    at:createCommand "NFA.Compress.Inter.make_quiz" ;
+    a at:Item ;
+    rdfs:label "DFA_Compress.Quiz" .
+
+att:Datenstrukturen
+    at:hasSubHeading att:Baeume, att:Programme_mit_Arrays, att:Programme_mit_Listen ;
+    a at:Heading ;
+    rdfs:label "Datenstrukturen" .
+
+<http://hgg.ontowiki.net/autotool/Type/Diffie_Hellman.Break>
+    at:createCommand "Diffie_Hellman.Break.make" ;
+    a at:Item ;
+    rdfs:label "Diffie_Hellman.Break" .
+
+<http://hgg.ontowiki.net/autotool/Type/Diffie_Hellman.Quiz>
+    at:createCommand "Diffie_Hellman.Quiz.make" ;
+    a at:Item ;
+    rdfs:label "Diffie_Hellman.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Equiv.Check>
+    at:createCommand "NFA.Equiv.Challenger.make" ;
+    a at:Item ;
+    rdfs:label "Equiv.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Equiv.Quiz>
+    at:createCommand "NFA.Equiv.Challenger.qmake" ;
+    a at:Item ;
+    rdfs:label "Equiv.Quiz" .
+
+att:Equiv_Challenge
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/Equiv.Check>, <http://hgg.ontowiki.net/autotool/Type/Equiv.Quiz> ;
+    a at:Heading ;
+    rdfs:label "Equiv Challenge" .
+
+<http://hgg.ontowiki.net/autotool/Type/Exp.Shortest_Missing>
+    at:createCommand "Exp.Shortest_Missing.make" ;
+    a at:Item ;
+    rdfs:label "Exp.Shortest_Missing" .
+
+<http://hgg.ontowiki.net/autotool/Type/Exp_Smaller.Check>
+    at:createCommand "Exp.Smaller.make" ;
+    a at:Item ;
+    rdfs:label "Exp_Smaller.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/FP.Check>
+    at:createCommand "FP.Check.make" ;
+    a at:Item ;
+    rdfs:label "FP.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/FP.Quiz>
+    at:createCommand "FP.Quiz.make" ;
+    a at:Item ;
+    rdfs:label "FP.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Faktor.Euklid.Check>
+    at:createCommand "Faktor.Euklid.make_fixed" ;
+    a at:Item ;
+    rdfs:label "Faktor.Euklid.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Faktor.Euklid.Quiz>
+    at:createCommand "Faktor.Euklid.make_quiz" ;
+    a at:Item ;
+    rdfs:label "Faktor.Euklid.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Faktor.Faktor.Check>
+    at:createCommand "Faktor.Faktor.make_fixed" ;
+    a at:Item ;
+    rdfs:label "Faktor.Faktor.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Faktor.Faktor.Quiz>
+    at:createCommand "Faktor.Faktor.make_quiz" ;
+    a at:Item ;
+    rdfs:label "Faktor.Faktor.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Faktor.Inverse.Check>
+    at:createCommand "Faktor.Inverse.make_fixed" ;
+    a at:Item ;
+    rdfs:label "Faktor.Inverse.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Faktor.Inverse.Quiz>
+    at:createCommand "Faktor.Inverse.make_quiz" ;
+    a at:Item ;
+    rdfs:label "Faktor.Inverse.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Faktor.Times.Check>
+    at:createCommand "Faktor.Times.make_fixed" ;
+    a at:Item ;
+    rdfs:label "Faktor.Times.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Faktor.Times.Quiz>
+    at:createCommand "Faktor.Times.make_quiz" ;
+    a at:Item ;
+    rdfs:label "Faktor.Times.Quiz" .
+
+att:Find_Model
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/Find_Model.Check> ;
+    a at:Heading ;
+    rdfs:label "Find Model" .
+
+<http://hgg.ontowiki.net/autotool/Type/Find_Model.Check>
+    at:createCommand "PL.Find_Model.make_fixed" ;
+    a at:Item ;
+    rdfs:label "Find_Model.Check" .
+
+att:Goto_to_Struct
+    at:createCommand "Flow.Central.goto_to_struct_fixed" ;
+    a at:Item ;
+    rdfs:label "Goto_to_Struct" .
+
+att:Grammatiken
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/Acceptor-Grammatik.Quiz>, <http://hgg.ontowiki.net/autotool/Type/CFG.Quiz>, <http://hgg.ontowiki.net/autotool/Type/CFG2.Check> ;
+    a at:Heading ;
+    rdfs:label "Grammatiken" .
+
+<http://hgg.ontowiki.net/autotool/Type/Graph.Bi.Check>
+    at:createCommand "Graph.Bi.Plain.make" ;
+    a at:Item ;
+    rdfs:label "Graph.Bi.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Graph.Bi.Quiz>
+    at:createCommand "Graph.Bi.Quiz.make" ;
+    a at:Item ;
+    rdfs:label "Graph.Bi.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Graph.Bisekt.Check>
+    at:createCommand "Graph.Bisekt.Plain.make" ;
+    a at:Item ;
+    rdfs:label "Graph.Bisekt.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Graph.Bisekt.Quiz>
+    at:createCommand "Graph.Bisekt.Quiz.make" ;
+    a at:Item ;
+    rdfs:label "Graph.Bisekt.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Graph.Cage>
+    at:createCommand "Graph.Cage.Central.make" ;
+    a at:Item ;
+    rdfs:label "Graph.Cage" .
+
+<http://hgg.ontowiki.net/autotool/Type/Graph.Circle.Check>
+    at:createCommand "Graph.Circle.Plain.make" ;
+    a at:Item ;
+    rdfs:label "Graph.Circle.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Graph.Circle.Quiz>
+    at:createCommand "Graph.Circle.Quiz.make" ;
+    a at:Item ;
+    rdfs:label "Graph.Circle.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Graph.Col.Check>
+    at:createCommand "Graph.Col.Plain.make" ;
+    a at:Item ;
+    rdfs:label "Graph.Col.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Graph.Col.Gadget>
+    at:createCommand "Graph.Col.Gadget.Central.make" ;
+    a at:Item ;
+    rdfs:label "Graph.Col.Gadget" .
+
+<http://hgg.ontowiki.net/autotool/Type/Graph.Col.Greedy>
+    at:createCommand "Graph.Col.Greedy.Central.make" ;
+    a at:Item ;
+    rdfs:label "Graph.Col.Greedy" .
+
+<http://hgg.ontowiki.net/autotool/Type/Graph.Col.Quiz>
+    at:createCommand "Graph.Col.Quiz.make" ;
+    a at:Item ;
+    rdfs:label "Graph.Col.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Graph.Cross>
+    at:createCommand "Graph.Cross.make" ;
+    a at:Item ;
+    rdfs:label "Graph.Cross" .
+
+<http://hgg.ontowiki.net/autotool/Type/Graph.Graceful>
+    at:createCommand "Graph.Graceful.Central.make" ;
+    a at:Item ;
+    rdfs:label "Graph.Graceful" .
+
+<http://hgg.ontowiki.net/autotool/Type/Graph.Hamilton.Check>
+    at:createCommand "Graph.Hamilton.Plain.make" ;
+    a at:Item ;
+    rdfs:label "Graph.Hamilton.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Graph.Hamilton.Quiz>
+    at:createCommand "Graph.Hamilton.Quiz.make" ;
+    a at:Item ;
+    rdfs:label "Graph.Hamilton.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Graph.MST.Check>
+    at:createCommand "Graph.MST.Plain.make" ;
+    a at:Item ;
+    rdfs:label "Graph.MST.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Graph.MST.Quiz>
+    at:createCommand "Graph.MST.Quiz.make" ;
+    a at:Item ;
+    rdfs:label "Graph.MST.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Graph.MinSep>
+    at:createCommand "Graph.MinSep.make" ;
+    a at:Item ;
+    rdfs:label "Graph.MinSep" .
+
+<http://hgg.ontowiki.net/autotool/Type/Graph.Nachbar>
+    at:createCommand "Graph.Nachbar.make" ;
+    a at:Item ;
+    rdfs:label "Graph.Nachbar" .
+
+<http://hgg.ontowiki.net/autotool/Type/Graph.PartialKTree.Check>
+    at:createCommand "Graph.PartialKTree.make" ;
+    a at:Item ;
+    rdfs:label "Graph.PartialKTree.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Graph.PartialKTree.Quiz>
+    at:createCommand "Graph.PartialKTree.qmake" ;
+    a at:Item ;
+    rdfs:label "Graph.PartialKTree.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Graph.Ramsey>
+    at:createCommand "Graph.Ramsey.make" ;
+    a at:Item ;
+    rdfs:label "Graph.Ramsey" .
+
+<http://hgg.ontowiki.net/autotool/Type/Graph.Selfcom>
+    at:createCommand "Graph.Selfcom.make" ;
+    a at:Item ;
+    rdfs:label "Graph.Selfcom" .
+
+<http://hgg.ontowiki.net/autotool/Type/Graph.TSP.Check>
+    at:createCommand "Graph.TSP.Plain.make" ;
+    a at:Item ;
+    rdfs:label "Graph.TSP.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Graph.TSP.Quiz>
+    at:createCommand "Graph.TSP.Quiz.make" ;
+    a at:Item ;
+    rdfs:label "Graph.TSP.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Graph.TreeWidth>
+    at:createCommand "Graph.TreeWidth.make" ;
+    a at:Item ;
+    rdfs:label "Graph.TreeWidth" .
+
+<http://hgg.ontowiki.net/autotool/Type/Graph.VC.Central.Check>
+    at:createCommand "Graph.VC.Central.make_fixed" ;
+    a at:Item ;
+    rdfs:label "Graph.VC.Central.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Graph.VC.Central.Quiz>
+    at:createCommand "Graph.VC.Central.make_quiz" ;
+    a at:Item ;
+    rdfs:label "Graph.VC.Central.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Graph.VC.VCSAT.Check>
+    at:createCommand "Graph.VC.VCSAT.make_fixed" ;
+    a at:Item ;
+    rdfs:label "Graph.VC.VCSAT.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Graph.VC.VCSAT.Quiz>
+    at:createCommand "Graph.VC.VCSAT.make_quiz" ;
+    a at:Item ;
+    rdfs:label "Graph.VC.VCSAT.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Graph.Van_der_Waerden>
+    at:createCommand "Graph.Van_der_Waerden.make" ;
+    a at:Item ;
+    rdfs:label "Graph.Van_der_Waerden" .
+
+<http://hgg.ontowiki.net/autotool/Type/Graph.Way.Check>
+    at:createCommand "Graph.Way.Plain.make" ;
+    a at:Item ;
+    rdfs:label "Graph.Way.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Graph.Way.Quiz>
+    at:createCommand "Graph.Way.Quiz.make" ;
+    a at:Item ;
+    rdfs:label "Graph.Way.Quiz" .
+
+att:Graphen
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/Graph.Bi.Check>, <http://hgg.ontowiki.net/autotool/Type/Graph.Bi.Quiz>, <http://hgg.ontowiki.net/autotool/Type/Graph.Bisekt.Check>, <http://hgg.ontowiki.net/autotool/Type/Graph.Bisekt.Quiz>, <http://hgg.ontowiki.net/autotool/Type/Graph.Cage>, <http://hgg.ontowiki.net/autotool/Type/Graph.Circle.Check>, <http://hgg.ontowiki.net/autotool/Type/Graph.Circle.Quiz>, <http://hgg.ontowiki.net/autotool/Type/Graph.Col.Check>, <http://hgg.ontowiki.net/autotool/Type/Graph.Col.Gadget>, <http://hgg.ontowiki.net/autotool/Type/Graph.Col.Greedy>, <http://hgg.ontowiki.net/autotool/Type/Graph.Col.Quiz>, <http://hgg.ontowiki.net/autotool/Type/Graph.Cross>, <http://hgg.ontowiki.net/autotool/Type/Graph.Graceful>, <http://hgg.ontowiki.net/autotool/Type/Graph.Hamilton.Check>, <http://hgg.ontowiki.net/autotool/Type/Graph.Hamilton.Quiz>, <http://hgg.ontowiki.net/autotool/Type/Graph.MST.Check>, <http://hgg.ontowiki.net/autotool/Type/Graph.MST.Quiz>, <http://hgg.ontowiki.net/autotool/Type/Graph.MinSep>, <http://hgg.ontowiki.net/autotool/Type/Graph.Nachbar>, <http://hgg.ontowiki.net/autotool/Type/Graph.PartialKTree.Check>, <http://hgg.ontowiki.net/autotool/Type/Graph.PartialKTree.Quiz>, <http://hgg.ontowiki.net/autotool/Type/Graph.Ramsey>, <http://hgg.ontowiki.net/autotool/Type/Graph.Selfcom>, <http://hgg.ontowiki.net/autotool/Type/Graph.TSP.Check>, <http://hgg.ontowiki.net/autotool/Type/Graph.TSP.Quiz>, <http://hgg.ontowiki.net/autotool/Type/Graph.TreeWidth>, <http://hgg.ontowiki.net/autotool/Type/Graph.Way.Check>, <http://hgg.ontowiki.net/autotool/Type/Graph.Way.Quiz> ;
+    at:hasSubHeading att:Graphoperationen ;
+    a at:Heading ;
+    rdfs:label "Graphen" .
+
+att:Graphoperationen
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/Algebraic_Graph.Check>, <http://hgg.ontowiki.net/autotool/Type/Algebraic_Graph.Quiz>, <http://hgg.ontowiki.net/autotool/Type/Algebraic_STGraph.Check>, <http://hgg.ontowiki.net/autotool/Type/Algebraic_STGraph.Quiz> ;
+    a at:Heading ;
+    rdfs:label "Graphoperationen" .
+
+<http://hgg.ontowiki.net/autotool/Type/Hanoi.Quiz>
+    at:createCommand "Hanoi.Quiz.make" ;
+    a at:Item ;
+    rdfs:label "Hanoi.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Hanoi.Semantik>
+    at:createCommand "Hanoi.Semantik.make" ;
+    a at:Item ;
+    rdfs:label "Hanoi.Semantik" .
+
+at:Heading
+    a owl:Class ;
+    rdfs:label "Heading" .
+
+att:Hilbert
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/Hilbert.Check> ;
+    a at:Heading ;
+    rdfs:label "Hilbert" .
+
+<http://hgg.ontowiki.net/autotool/Type/Hilbert.Check>
+    at:createCommand "Hilbert.Central.make_fixed" ;
+    a at:Item ;
+    rdfs:label "Hilbert.Check" .
+
+at:Item
+    a owl:Class ;
+    rdfs:label "Item" .
+
+att:Kellerautomaten
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/Acceptor-NPDA.Check>, <http://hgg.ontowiki.net/autotool/Type/Acceptor-NPDA.Quiz> ;
+    a at:Heading ;
+    rdfs:label "Kellerautomaten" .
+
+<http://hgg.ontowiki.net/autotool/Type/KnapsackFraction.Central.Check>
+    at:createCommand "KnapsackFraction.Central.make_fixed" ;
+    a at:Item ;
+    rdfs:label "KnapsackFraction.Central.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/KnapsackFraction.Central.Quiz>
+    at:createCommand "KnapsackFraction.Central.make_quiz" ;
+    a at:Item ;
+    rdfs:label "KnapsackFraction.Central.Quiz" .
+
+att:Kombinatorik
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/Hanoi.Quiz>, <http://hgg.ontowiki.net/autotool/Type/Hanoi.Semantik>, <http://hgg.ontowiki.net/autotool/Type/PCProblem.Check>, <http://hgg.ontowiki.net/autotool/Type/PCProblem.Quiz> ;
+    at:hasSubHeading att:Lunar_Lockout_original, att:Ramsey-Theorie, att:Solar_Lockout_modified, att:kurze_gemeinsame_Superfolge, att:lange_gemeinsame_Teilfolge ;
+    a at:Heading ;
+    rdfs:label "Kombinatorik" .
+
+att:Kombinatorische_Logik
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/CL.Find.Check> ;
+    a at:Heading ;
+    rdfs:comment "mehrfach im Baum" ;
+    rdfs:label "Kombinatorische Logik" .
+
+att:Kompression
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/Compress.LZ77.Check>, <http://hgg.ontowiki.net/autotool/Type/Compress.LZ77.Quiz>, <http://hgg.ontowiki.net/autotool/Type/Compress.LZW.Quiz> ;
+    a at:Heading ;
+    rdfs:label "Kompression" .
+
+<http://hgg.ontowiki.net/autotool/Type/LCS.Instance.Check>
+    at:createCommand "LCS.Instance.make_fixed" ;
+    a at:Item ;
+    rdfs:label "LCS.Instance.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/LCS.Instance.Quiz>
+    at:createCommand "LCS.Instance.make_quiz" ;
+    a at:Item ;
+    rdfs:label "LCS.Instance.Quiz" .
+
+att:Lambda-Kalkuel
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/Lambda.Backward_Join.Check>, <http://hgg.ontowiki.net/autotool/Type/Lambda.Derive.Check>, <http://hgg.ontowiki.net/autotool/Type/Lambda.Derive.Quiz>, <http://hgg.ontowiki.net/autotool/Type/Rewriting.Lambda.Lambda> ;
+    a at:Heading ;
+    rdfs:comment "mehrfach im Baum" ;
+    rdfs:label "Lambda-Kalkül" .
+
+<http://hgg.ontowiki.net/autotool/Type/Lambda.Backward_Join.Check>
+    at:createCommand "Lambda.Backward_Join.make_fixed" ;
+    a at:Item ;
+    rdfs:label "Lambda.Backward_Join.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Lambda.Derive.Check>
+    at:createCommand "Lambda.Derive.make_fixed" ;
+    a at:Item ;
+    rdfs:label "Lambda.Derive.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Lambda.Derive.Quiz>
+    at:createCommand "Lambda.Derive.make_quiz" ;
+    a at:Item ;
+    rdfs:label "Lambda.Derive.Quiz" .
+
+att:Logik
+    at:hasSubHeading att:Aussagenlogik, att:Praedikatenlogik ;
+    a at:Heading ;
+    rdfs:label "Logik" .
+
+att:Lunar_Lockout_original
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/Robots.Interface.Check>, <http://hgg.ontowiki.net/autotool/Type/Robots.Interface.Quiz>, <http://hgg.ontowiki.net/autotool/Type/Robots.Inverse.Check>, <http://hgg.ontowiki.net/autotool/Type/Robots.Inverse.Quiz> ;
+    a at:Heading ;
+    rdfs:label "Lunar Lockout (original)" .
+
+att:Mengen_und_Relationen
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/Algebraic_Relation.Check>, <http://hgg.ontowiki.net/autotool/Type/Algebraic_Relation.Quiz>, <http://hgg.ontowiki.net/autotool/Type/Algebraic_Set.Check>, <http://hgg.ontowiki.net/autotool/Type/Algebraic_Set.Quiz> ;
+    a at:Heading ;
+    rdfs:label "Mengen und Relationen" .
+
+<http://hgg.ontowiki.net/autotool/Type/NFA.Nerode.Congruent.Check>
+    at:createCommand "NFA.Nerode.Congruent.Check.make" ;
+    a at:Item ;
+    rdfs:label "NFA.Nerode.Congruent.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/NFA.Nerode.Congruent.Quiz>
+    at:createCommand "NFA.Nerode.Congruent.Quiz.make" ;
+    a at:Item ;
+    rdfs:label "NFA.Nerode.Congruent.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/NFA.Nerode.Incongruent.Check>
+    at:createCommand "NFA.Nerode.Incongruent.Check.make" ;
+    a at:Item ;
+    rdfs:label "NFA.Nerode.Incongruent.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/NFA.Nerode.Incongruent.Quiz>
+    at:createCommand "NFA.Nerode.Incongruent.Quiz.make" ;
+    a at:Item ;
+    rdfs:label "NFA.Nerode.Incongruent.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/NFA.Nerode.Separation.Check>
+    at:createCommand "NFA.Nerode.Separation.Check.make" ;
+    a at:Item ;
+    rdfs:label "NFA.Nerode.Separation.Check" .
+
+att:NP-vollstaendige_Probleme
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/Binpack.FFD.Check>, <http://hgg.ontowiki.net/autotool/Type/Binpack.Interface.Check>, <http://hgg.ontowiki.net/autotool/Type/Binpack.Interface.Quiz>, <http://hgg.ontowiki.net/autotool/Type/CNF_SAT.Check>, <http://hgg.ontowiki.net/autotool/Type/CNF_SAT.Quiz>, <http://hgg.ontowiki.net/autotool/Type/Graph.VC.Central.Check>, <http://hgg.ontowiki.net/autotool/Type/Graph.VC.Central.Quiz>, <http://hgg.ontowiki.net/autotool/Type/Graph.VC.VCSAT.Check>, <http://hgg.ontowiki.net/autotool/Type/Graph.VC.VCSAT.Quiz>, <http://hgg.ontowiki.net/autotool/Type/KnapsackFraction.Central.Check>, <http://hgg.ontowiki.net/autotool/Type/KnapsackFraction.Central.Quiz>, <http://hgg.ontowiki.net/autotool/Type/Partition.Central.Check>, <http://hgg.ontowiki.net/autotool/Type/Partition.Central.Quiz> ;
+    a at:Heading ;
+    rdfs:label "NP-vollständige Probleme" .
+
+att:Nerode-Kongruenz
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/NFA.Nerode.Congruent.Check>, <http://hgg.ontowiki.net/autotool/Type/NFA.Nerode.Congruent.Quiz>, <http://hgg.ontowiki.net/autotool/Type/NFA.Nerode.Incongruent.Check>, <http://hgg.ontowiki.net/autotool/Type/NFA.Nerode.Incongruent.Quiz>, <http://hgg.ontowiki.net/autotool/Type/NFA.Nerode.Separation.Check> ;
+    a at:Heading ;
+    rdfs:label "Nerode-Kongruenz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Number.Base.Check>
+    at:createCommand "Number.Base.Central.make_fixed" ;
+    a at:Item ;
+    rdfs:label "Number.Base.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Number.Base.Quiz>
+    at:createCommand "Number.Base.Central.make_quiz" ;
+    a at:Item ;
+    rdfs:label "Number.Base.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Number.Float.From.Check>
+    at:createCommand "Number.Float.From.make_fixed" ;
+    a at:Item ;
+    rdfs:label "Number.Float.From.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Number.Float.From.Quiz>
+    at:createCommand "Number.Float.From.make_quiz" ;
+    a at:Item ;
+    rdfs:label "Number.Float.From.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Number.Float.To.Check>
+    at:createCommand "Number.Float.To.make_fixed" ;
+    a at:Item ;
+    rdfs:label "Number.Float.To.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Number.Float.To.Quiz>
+    at:createCommand "Number.Float.To.make_quiz" ;
+    a at:Item ;
+    rdfs:label "Number.Float.To.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/PCProblem.Check>
+    at:createCommand "PCProblem.Quiz.make_fixed" ;
+    a at:Item ;
+    rdfs:label "PCProblem.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/PCProblem.Quiz>
+    at:createCommand "PCProblem.Quiz.make_quiz" ;
+    a at:Item ;
+    rdfs:label "PCProblem.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Palindrom.Check>
+    at:createCommand "Palindrom.Plain.make" ;
+    a at:Item ;
+    rdfs:comment "noch nicht eingeordnet" ;
+    rdfs:label "Palindrom.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Partition.Central.Check>
+    at:createCommand "Partition.Central.make_fixed" ;
+    a at:Item ;
+    rdfs:label "Partition.Central.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Partition.Central.Quiz>
+    at:createCommand "Partition.Central.make_quiz" ;
+    a at:Item ;
+    rdfs:label "Partition.Central.Quiz" .
+
+att:Peano-Zahlen_und_Folds
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/Peano.Check> ;
+    a at:Heading ;
+    rdfs:label "Peano-Zahlen und Folds" .
+
+<http://hgg.ontowiki.net/autotool/Type/Peano.Check>
+    at:createCommand "Peano.Make.make" ;
+    a at:Item ;
+    rdfs:label "Peano.Check" .
+
+att:Praedikatenlogik
+    at:hasSubHeading att:Find_Model ;
+    a at:Heading ;
+    rdfs:label "Prädikatenlogik" .
+
+att:Primitiv_rekursive_Funktionen
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/Primrec_2D.Check>, <http://hgg.ontowiki.net/autotool/Type/Primrec_2D.Quiz>, <http://hgg.ontowiki.net/autotool/Type/Primrec_alt.Check>, <http://hgg.ontowiki.net/autotool/Type/Primrec_alt.Quiz> ;
+    a at:Heading ;
+    rdfs:label "Primitiv rekursive Funktionen" .
+
+<http://hgg.ontowiki.net/autotool/Type/Primrec_2D.Check>
+    at:createCommand "Fun.Direct.make_fixed" ;
+    a at:Item ;
+    rdfs:label "Primrec_2D.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Primrec_2D.Quiz>
+    at:createCommand "Fun.Direct.make_quiz" ;
+    a at:Item ;
+    rdfs:label "Primrec_2D.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Primrec_alt.Check>
+    at:createCommand "Fun.Make.make" ;
+    a at:Item ;
+    rdfs:comment "alt" ;
+    rdfs:label "Primrec_alt.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Primrec_alt.Quiz>
+    at:createCommand "Fun.Quiz.make" ;
+    a at:Item ;
+    rdfs:comment "alt" ;
+    rdfs:label "Primrec_alt.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Program.Array.Check>
+    at:createCommand "$ Program.General.Central.make_fixed Program.Array.Instance.Program_Array" ;
+    a at:Item ;
+    rdfs:label "Program.Array.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Program.Array.Quiz>
+    at:createCommand "Program.Array.Instance.make_quiz" ;
+    a at:Item ;
+    rdfs:label "Program.Array.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Program.Cexp.Interface>
+    at:createCommand "Program.Cexp.Interface.make_fixed" ;
+    a at:Item ;
+    rdfs:label "Program.Cexp.Interface" .
+
+<http://hgg.ontowiki.net/autotool/Type/Program.List.Check>
+    at:createCommand "$ Program.General.Central.make_fixed Program.List.Instance.Program_List" ;
+    a at:Item ;
+    rdfs:label "Program.List.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Program.List.Quiz>
+    at:createCommand "Program.List.Instance.make_quiz" ;
+    a at:Item ;
+    rdfs:label "Program.List.Quiz" .
+
+att:Programme_mit_Arrays
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/Program.Array.Check>, <http://hgg.ontowiki.net/autotool/Type/Program.Array.Quiz> ;
+    a at:Heading ;
+    rdfs:comment "mehrfach im Baum" ;
+    rdfs:label "Programme mit Arrays" .
+
+att:Programme_mit_Listen
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/Program.List.Check>, <http://hgg.ontowiki.net/autotool/Type/Program.List.Quiz> ;
+    a at:Heading ;
+    rdfs:comment "mehrfach im Baum" ;
+    rdfs:label "Programme mit Listen" .
+
+att:Programme_mit_Listen_Stacks_Queues
+    at:hasSubHeading att:Programme_mit_Listen ;
+    a at:Heading ;
+    rdfs:label "Programme mit Listen, Stacks, Queues" .
+
+att:Programmierung
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/FP.Check>, <http://hgg.ontowiki.net/autotool/Type/FP.Quiz>, att:Goto_to_Struct, <http://hgg.ontowiki.net/autotool/Type/Specify.Inter>, att:Struct_to_Goto, <http://hgg.ontowiki.net/autotool/Type/Type.Check>, <http://hgg.ontowiki.net/autotool/Type/Type.Quiz> ;
+    a at:Heading ;
+    rdfs:label "Programmierung" .
+
+<http://hgg.ontowiki.net/autotool/Type/Pump-CF.Check>
+    at:createCommand "Pump.Inter2.cf" ;
+    a at:Item ;
+    rdfs:label "Pump-CF.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Pump-CF.Quiz>
+    at:createCommand "Pump.Inter.cf" ;
+    a at:Item ;
+    rdfs:comment "veraltet" ;
+    rdfs:label "Pump-CF.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Pump-REG.Check>
+    at:createCommand "Pump.Inter2.reg" ;
+    a at:Item ;
+    rdfs:label "Pump-REG.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Pump-REG.Quiz>
+    at:createCommand "Pump.Inter.reg" ;
+    a at:Item ;
+    rdfs:comment "veraltet" ;
+    rdfs:label "Pump-REG.Quiz" .
+
+att:Pumping-Lemma
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/Pump-CF.Check>, <http://hgg.ontowiki.net/autotool/Type/Pump-CF.Quiz>, <http://hgg.ontowiki.net/autotool/Type/Pump-REG.Check>, <http://hgg.ontowiki.net/autotool/Type/Pump-REG.Quiz> ;
+    a at:Heading ;
+    rdfs:label "Pumping-Lemma" .
+
+<http://hgg.ontowiki.net/autotool/Type/RD.Quiz>
+    at:createCommand "RD.make_quiz" ;
+    a at:Item ;
+    rdfs:label "RD.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/RSA.Break>
+    at:createCommand "RSA.Break.make" ;
+    a at:Item ;
+    rdfs:label "RSA.Break" .
+
+<http://hgg.ontowiki.net/autotool/Type/RSA.Quiz>
+    at:createCommand "RSA.Quiz.make" ;
+    a at:Item ;
+    rdfs:label "RSA.Quiz" .
+
+att:Ramsey-Theorie
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/Graph.Ramsey>, <http://hgg.ontowiki.net/autotool/Type/Graph.Van_der_Waerden> ;
+    a at:Heading ;
+    rdfs:label "Ramsey-Theorie" .
+
+att:Resolution
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/Resolution.Check>, <http://hgg.ontowiki.net/autotool/Type/Resolution.Quiz> ;
+    a at:Heading ;
+    rdfs:label "Resolution" .
+
+<http://hgg.ontowiki.net/autotool/Type/Resolution.Check>
+    at:createCommand "Resolution.Central.make_fixed" ;
+    a at:Item ;
+    rdfs:label "Resolution.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Resolution.Quiz>
+    at:createCommand "Resolution.Central.make_quiz" ;
+    a at:Item ;
+    rdfs:label "Resolution.Quiz" .
+
+att:Rest
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/Algebraic_Graph.Check>, <http://hgg.ontowiki.net/autotool/Type/Algebraic_Graph.Quiz>, <http://hgg.ontowiki.net/autotool/Type/Algebraic_Integer.Check>, <http://hgg.ontowiki.net/autotool/Type/Algebraic_Integer.Quiz>, <http://hgg.ontowiki.net/autotool/Type/Algebraic_STGraph.Check>, <http://hgg.ontowiki.net/autotool/Type/Algebraic_STGraph.Quiz>, <http://hgg.ontowiki.net/autotool/Type/Palindrom.Check> ;
+    a at:Heading ;
+    rdfs:label "Rest" .
+
+<http://hgg.ontowiki.net/autotool/Type/Rewriting.Lambda.Lambda>
+    at:createCommand "$ Rewriting.Derive.make_fixed Lambda.Apply.For_Lambda" ;
+    a at:Item ;
+    rdfs:label "Rewriting.Lambda.Lambda" .
+
+<http://hgg.ontowiki.net/autotool/Type/Rewriting.SRS.SRS>
+    at:createCommand "$ Rewriting.Derive.make_fixed Rewriting.SRS.Apply.For_SRS" ;
+    a at:Item ;
+    rdfs:label "Rewriting.SRS.SRS" .
+
+<http://hgg.ontowiki.net/autotool/Type/Rewriting.TRS.Numerical>
+    at:createCommand "Rewriting.TRS.Numerical.make" ;
+    a at:Item ;
+    rdfs:label "Rewriting.TRS.Numerical" .
+
+<http://hgg.ontowiki.net/autotool/Type/Rewriting.TRS.TRS>
+    at:createCommand "$ Rewriting.Derive.make_fixed Rewriting.TRS.Apply.For_TRS" ;
+    a at:Item ;
+    rdfs:label "Rewriting.TRS.TRS" .
+
+<http://hgg.ontowiki.net/autotool/Type/Robots.Interface.Check>
+    at:createCommand "Robots.Interface.make" ;
+    a at:Item ;
+    rdfs:label "Robots.Interface.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Robots.Interface.Quiz>
+    at:createCommand "Robots.Interface.qmake" ;
+    a at:Item ;
+    rdfs:label "Robots.Interface.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Robots.Inverse.Check>
+    at:createCommand "Robots.Inverse.make" ;
+    a at:Item ;
+    rdfs:label "Robots.Inverse.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Robots.Inverse.Quiz>
+    at:createCommand "Robots.Inverse.qmake" ;
+    a at:Item ;
+    rdfs:label "Robots.Inverse.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Robots3.Interface.Check>
+    at:createCommand "Robots3.Interface.make" ;
+    a at:Item ;
+    rdfs:label "Robots3.Interface.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Robots3.Interface.Quiz>
+    at:createCommand "Robots3.Interface.qmake" ;
+    a at:Item ;
+    rdfs:label "Robots3.Interface.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Robots3.Inverse.Check>
+    at:createCommand "Robots3.Inverse.make" ;
+    a at:Item ;
+    rdfs:label "Robots3.Inverse.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Robots3.Inverse.Quiz>
+    at:createCommand "Robots3.Inverse.qmake" ;
+    a at:Item ;
+    rdfs:label "Robots3.Inverse.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/Rushhour.Central>
+    at:createCommand "Rushhour.Central.make" ;
+    a at:Item ;
+    rdfs:label "Rushhour.Central" .
+
+<http://hgg.ontowiki.net/autotool/Type/SCS.Instance.Check>
+    at:createCommand "SCS.Instance.make_fixed" ;
+    a at:Item ;
+    rdfs:label "SCS.Instance.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/SCS.Instance.Quiz>
+    at:createCommand "SCS.Instance.make_quiz" ;
+    a at:Item ;
+    rdfs:label "SCS.Instance.Quiz" .
+
+att:Solar_Lockout_modified
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/Robots3.Interface.Check>, <http://hgg.ontowiki.net/autotool/Type/Robots3.Interface.Quiz>, <http://hgg.ontowiki.net/autotool/Type/Robots3.Inverse.Check>, <http://hgg.ontowiki.net/autotool/Type/Robots3.Inverse.Quiz>, <http://hgg.ontowiki.net/autotool/Type/Rushhour.Central> ;
+    a at:Heading ;
+    rdfs:label "Solar Lockout (modified)" .
+
+<http://hgg.ontowiki.net/autotool/Type/Sortier.Median.Check>
+    at:createCommand "Sortier.Median.Check.make" ;
+    a at:Item ;
+    rdfs:label "Sortier.Median.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Sortier.Merge.Check>
+    at:createCommand "Sortier.Merge.Check.make" ;
+    a at:Item ;
+    rdfs:label "Sortier.Merge.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Sortier.Netz.Check>
+    at:createCommand "Sortier.Netz.Check.make" ;
+    a at:Item ;
+    rdfs:label "Sortier.Netz.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Sortier.Programm.Check>
+    at:createCommand "Sortier.Programm.Check.make" ;
+    a at:Item ;
+    rdfs:label "Sortier.Programm.Check" .
+
+att:Sortiernetze
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/Sortier.Median.Check>, <http://hgg.ontowiki.net/autotool/Type/Sortier.Merge.Check>, <http://hgg.ontowiki.net/autotool/Type/Sortier.Netz.Check> ;
+    a at:Heading ;
+    rdfs:label "Sortiernetze" .
+
+att:Sortierprogramme
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/Sortier.Programm.Check> ;
+    a at:Heading ;
+    rdfs:label "Sortierprogramme" .
+
+<http://hgg.ontowiki.net/autotool/Type/Specify.Inter>
+    at:createCommand "Specify.Inter.make" ;
+    a at:Item ;
+    rdfs:label "Specify.Inter" .
+
+att:String-Matching
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/String_Matching.BM.Check>, <http://hgg.ontowiki.net/autotool/Type/String_Matching.BM.Quiz>, <http://hgg.ontowiki.net/autotool/Type/String_Matching.KMP.Check>, <http://hgg.ontowiki.net/autotool/Type/String_Matching.KMP.Quiz> ;
+    a at:Heading ;
+    rdfs:label "String-Matching" .
+
+<http://hgg.ontowiki.net/autotool/Type/String_Matching.BM.Check>
+    at:createCommand "String_Matching.BM.Central.make_fixed" ;
+    a at:Item ;
+    rdfs:label "String_Matching.BM.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/String_Matching.BM.Quiz>
+    at:createCommand "String_Matching.BM.Central.make_quiz" ;
+    a at:Item ;
+    rdfs:label "String_Matching.BM.Quiz" .
+
+<http://hgg.ontowiki.net/autotool/Type/String_Matching.KMP.Check>
+    at:createCommand "String_Matching.KMP.Central.make_fixed" ;
+    a at:Item ;
+    rdfs:label "String_Matching.KMP.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/String_Matching.KMP.Quiz>
+    at:createCommand "String_Matching.KMP.Central.make_quiz" ;
+    a at:Item ;
+    rdfs:label "String_Matching.KMP.Quiz" .
+
+att:Struct_to_Goto
+    at:createCommand "Flow.Central.struct_to_goto_fixed" ;
+    a at:Item ;
+    rdfs:label "Struct_to_Goto" .
+
+att:Terme_Ersetzungssysteme
+    at:hasSubHeading att:Kombinatorische_Logik, att:Lambda-Kalkuel, att:Termersetzung, att:Unifikation, att:Wortersetzung ;
+    a at:Heading ;
+    rdfs:label "Terme, Ersetzungssysteme" .
+
+att:Termersetzung
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/RD.Quiz>, <http://hgg.ontowiki.net/autotool/Type/Rewriting.TRS.Numerical>, <http://hgg.ontowiki.net/autotool/Type/Rewriting.TRS.TRS> ;
+    a at:Heading ;
+    rdfs:label "Termersetzung" .
+
+att:Turing-Maschine_als_Akzeptor
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/Acceptor-Turing.Quiz> ;
+    a at:Heading ;
+    rdfs:label "Turing-Maschine (als Akzeptor)" .
+
+<http://hgg.ontowiki.net/autotool/Type/Type.Check>
+    at:createCommand "Type.Check.make" ;
+    a at:Item ;
+    rdfs:label "Type.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Type.Quiz>
+    at:createCommand "Type.Quiz.make" ;
+    a at:Item ;
+    rdfs:label "Type.Quiz" .
+
+att:Umformen_alt
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/Boolean.Check>, <http://hgg.ontowiki.net/autotool/Type/Boolean.Quiz> ;
+    a at:Heading ;
+    rdfs:label "Umformen (alt)" .
+
+att:Umformen_neu
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/Boolean2.Check>, <http://hgg.ontowiki.net/autotool/Type/Boolean2.Quiz> ;
+    a at:Heading ;
+    rdfs:label "Umformen (neu)" .
+
+att:Unifikation
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/Unify.Main.Check>, <http://hgg.ontowiki.net/autotool/Type/Unify.Main.Quiz> ;
+    a at:Heading ;
+    rdfs:label "Unifikation" .
+
+<http://hgg.ontowiki.net/autotool/Type/Unify.Main.Check>
+    at:createCommand "$ Unify.Main.make_fixed" ;
+    a at:Item ;
+    rdfs:label "Unify.Main.Check" .
+
+<http://hgg.ontowiki.net/autotool/Type/Unify.Main.Quiz>
+    at:createCommand "$ Unify.Main.make_quiz" ;
+    a at:Item ;
+    rdfs:label "Unify.Main.Quiz" .
+
+att:Verschluesselung
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/Diffie_Hellman.Break>, <http://hgg.ontowiki.net/autotool/Type/Diffie_Hellman.Quiz>, <http://hgg.ontowiki.net/autotool/Type/RSA.Break>, <http://hgg.ontowiki.net/autotool/Type/RSA.Quiz> ;
+    a at:Heading ;
+    rdfs:label "Verschlüsselung" .
+
+att:Wortersetzung
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/Rewriting.SRS.SRS> ;
+    a at:Heading ;
+    rdfs:label "Wortersetzung" .
+
+att:Zahlensysteme
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/Number.Base.Check>, <http://hgg.ontowiki.net/autotool/Type/Number.Base.Quiz>, <http://hgg.ontowiki.net/autotool/Type/Number.Float.From.Check>, <http://hgg.ontowiki.net/autotool/Type/Number.Float.From.Quiz>, <http://hgg.ontowiki.net/autotool/Type/Number.Float.To.Check>, <http://hgg.ontowiki.net/autotool/Type/Number.Float.To.Quiz> ;
+    a at:Heading ;
+    rdfs:label "Zahlensysteme" .
+
+att:Zahlentheorie
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/Collatz.Inverse.Check>, <http://hgg.ontowiki.net/autotool/Type/Collatz.Inverse.Quiz>, <http://hgg.ontowiki.net/autotool/Type/Collatz.Long.Check>, <http://hgg.ontowiki.net/autotool/Type/Collatz.Plain.Check>, <http://hgg.ontowiki.net/autotool/Type/Collatz.Plain.Quiz>, <http://hgg.ontowiki.net/autotool/Type/Faktor.Euklid.Check>, <http://hgg.ontowiki.net/autotool/Type/Faktor.Euklid.Quiz>, <http://hgg.ontowiki.net/autotool/Type/Faktor.Faktor.Check>, <http://hgg.ontowiki.net/autotool/Type/Faktor.Faktor.Quiz>, <http://hgg.ontowiki.net/autotool/Type/Faktor.Inverse.Check>, <http://hgg.ontowiki.net/autotool/Type/Faktor.Inverse.Quiz>, <http://hgg.ontowiki.net/autotool/Type/Faktor.Times.Check>, <http://hgg.ontowiki.net/autotool/Type/Faktor.Times.Quiz> ;
+    a at:Heading ;
+    rdfs:label "Zahlentheorie" .
+
+att:endliche_Automaten
+    at:hasSubHeading att:Convert_To_NFA, att:DFA_Compress, att:Equiv_Challenge ;
+    a at:Heading ;
+    rdfs:label "endliche Automaten" .
+
+att:kurze_gemeinsame_Superfolge
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/SCS.Instance.Check>, <http://hgg.ontowiki.net/autotool/Type/SCS.Instance.Quiz> ;
+    a at:Heading ;
+    rdfs:label "kurze gemeinsame Superfolge" .
+
+att:lange_gemeinsame_Teilfolge
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/LCS.Instance.Check>, <http://hgg.ontowiki.net/autotool/Type/LCS.Instance.Quiz> ;
+    a at:Heading ;
+    rdfs:label "lange gemeinsame Teilfolge" .
+
+att:regulaere_Ausdruecke
+    at:hasItem <http://hgg.ontowiki.net/autotool/Type/Convert_To_Exp.Check>, <http://hgg.ontowiki.net/autotool/Type/Convert_To_Exp.Quiz>, <http://hgg.ontowiki.net/autotool/Type/Exp.Shortest_Missing>, <http://hgg.ontowiki.net/autotool/Type/Exp_Smaller.Check> ;
+    a at:Heading ;
+    rdfs:label "reguläre Ausdrücke" .
+

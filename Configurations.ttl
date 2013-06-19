@@ -1,0 +1,773 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix at: <http://hgg.ontowiki.net/autotool/> .
+@prefix atp: <http://hgg.ontowiki.net/autotool/Person/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+at:Config
+    a owl:Class ;
+    rdfs:label "Konfiguration" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/>
+    a owl:Ontology ;
+    rdfs:comment "Autotool Configurations im Autolat-Format" ;
+    rdfs:label "Autotool Exercises Configurations" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/S10.Ber.A01>
+    at:Aufgabenstellung "Deterministische Turingmaschine für {a,b}-Palindrome" ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasXMLFile "S10.Ber.A01.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/S10.Ber> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Acceptor-Turing.Quiz> ;
+    a at:Config ;
+    rdfs:label "S10.Ber.A01" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/S10.Ber.A02>
+    at:Aufgabenstellung "Turingmaschine für f(x) = x^2" ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasXMLFile "S10.Ber.A02.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/S10.Ber> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Machine.Numerical.Turing-Maschine> ;
+    a at:Config ;
+    rdfs:label "S10.Ber.A02" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/S10.Ber.A03>
+    at:Aufgabenstellung "Fibonacci-Funktion mit Variablenkopien" ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasXMLFile "S10.Ber.A03.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/S10.Ber> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/CM.RAM> ;
+    a at:Config ;
+    rdfs:label "S10.Ber.A03" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/S10.Ber.A04>
+    at:Aufgabenstellung "Fibonacci-Funktion ohne Hilfsmittel berechnen" ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasXMLFile "S10.Ber.A04.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/S10.Ber> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/CM.RAM> ;
+    a at:Config ;
+    rdfs:label "S10.Ber.A04" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/S10.Ber.A05>
+    at:Aufgabenstellung "Exponentialfunktion als WHILE-Programm" ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasXMLFile "S10.Ber.A05.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/S10.Ber> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/CM.RAM> ;
+    a at:Config ;
+    rdfs:label "S10.Ber.A05" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/S10.Ber.A06>
+    at:Aufgabenstellung "Exponentialfunktion primitiv rekursiv darstellen" ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasXMLFile "S10.Ber.A06.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/S10.Ber> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Machine.Numerical.Fun> ;
+    a at:Config ;
+    rdfs:label "S10.Ber.A06" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/S10.Ber.A07>
+    at:Aufgabenstellung "Zufalls-PCP lösen" ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasXMLFile "S10.Ber.A07.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/S10.Ber> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/PCProblem.Quiz> ;
+    a at:Config ;
+    rdfs:label "S10.Ber.A07" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/S10.Ber.A08>
+    at:Aufgabenstellung "PCP über dem Alphabet {a,b}" ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasXMLFile "S10.Ber.A08.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/S10.Ber> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/PCProblem.Check> ;
+    a at:Config ;
+    rdfs:label "S10.Ber.A08" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/S11.Berechenbarkeit.2-2>
+    at:Aufgabenstellung "Konstruieren Sie eine Maschine, die die Funktion [ x1 , x2 ] -> (x1 `max` x2) berechnet. Die Maschine soll die folgenden Bedingungen erfüllen: Builtins [ Copy ], No_While" ;
+    at:contributedBy atp:Goetze_Doreen, atp:Weidner_Thomas ;
+    at:hasXMLFile "S11.Berechenbarkeit.2-2.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/S11.Berechenbarkeit> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Machine.Numerical.RAM> ;
+    a at:Config ;
+    rdfs:comment "Zwei Aufgaben, die erste hat eine Beschränkung der Bearbeitungszeit auf 6 Stunden. \"Maximum2\" enthält die gleiche Aufgabe wie \"Maximum\" und kann gelöst werden, falls die 6 Stunden abgelaufen sind. Es spielt keine Rolle für die Bewertung, ob \"Maximum\" oder \"Maximum2\" gelöst wurde." ;
+    rdfs:label "S11.Berechenbarkeit.2-2" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/S11.Berechenbarkeit.2-4>
+    at:Aufgabenstellung "Konstruieren Sie eine Maschine, die die Funktion [ x1 ] -> log2 x1 berechnet! Die Maschine soll die folgenden Bedingungen erfüllen: Builtins [ Plus , Minus , Times , Div , Mod ]" ;
+    at:contributedBy atp:Goetze_Doreen, atp:Weidner_Thomas ;
+    at:hasXMLFile "S11.Berechenbarkeit.2-4.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/S11.Berechenbarkeit> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Machine.Numerical.RAM> ;
+    a at:Config ;
+    rdfs:label "S11.Berechenbarkeit.2-4" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/S11.Berechenbarkeit.2-5>
+    at:Aufgabenstellung "Konstruieren Sie eine Maschine, die die Funktion [ x1 ] -> fib x1 berechnet! Die Maschine soll die folgenden Bedingungen erfüllen: Builtins [ ], No_While" ;
+    at:contributedBy atp:Goetze_Doreen, atp:Weidner_Thomas ;
+    at:hasXMLFile "S11.Berechenbarkeit.2-5.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/S11.Berechenbarkeit> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Machine.Numerical.RAM> ;
+    a at:Config ;
+    rdfs:label "S11.Berechenbarkeit.2-5" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/S11.Berechenbarkeit.3-2>
+    at:Aufgabenstellung "Entwerfen Sie eine WHILE-Programm, das für alle natürlichen Zahlen den ganzen Anteil der Quadratwurzel der Zahl berechnet." ;
+    at:contributedBy atp:Goetze_Doreen, atp:Weidner_Thomas ;
+    at:hasXMLFile "S11.Berechenbarkeit.3-2.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/S11.Berechenbarkeit> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Machine.Numerical.RAM> ;
+    a at:Config ;
+    rdfs:label "S11.Berechenbarkeit.3-2" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/S11.Berechenbarkeit.3-3>
+    at:Aufgabenstellung "Entwerfen Sie eine Turingmaschine, die die Sprache {www | w ist Wort aus {a,b}*} akzeptiert." ;
+    at:contributedBy atp:Goetze_Doreen, atp:Weidner_Thomas ;
+    at:hasXMLFile "S11.Berechenbarkeit.3-3.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/S11.Berechenbarkeit> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Acceptor-Turing.Quiz> ;
+    a at:Config ;
+    rdfs:label "S11.Berechenbarkeit.3-3" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/S11.Berechenbarkeit.3-4>
+    at:Aufgabenstellung "Entwerfen Sie eine deterministische Turingmaschine, die die Sprache der Palindrome über {a, b} akzeptiert." ;
+    at:contributedBy atp:Goetze_Doreen, atp:Weidner_Thomas ;
+    at:hasXMLFile "S11.Berechenbarkeit.3-4.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/S11.Berechenbarkeit> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Acceptor-Turing.Quiz> ;
+    a at:Config ;
+    rdfs:label "S11.Berechenbarkeit.3-4" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/S11.Berechenbarkeit.4-2>
+    at:Aufgabenstellung "Konstruieren Sie eine Turingmaschine für f(x) = x^2." ;
+    at:contributedBy atp:Goetze_Doreen, atp:Weidner_Thomas ;
+    at:hasXMLFile "S11.Berechenbarkeit.4-2.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/S11.Berechenbarkeit> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Machine.Numerical.Turing-Maschine> ;
+    a at:Config ;
+    rdfs:label "S11.Berechenbarkeit.4-2" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/S11.Berechenbarkeit.4-3>
+    at:Aufgabenstellung "Konstruieren Sie eine Turingmaschine für f(x,y)=max(x,y)." ;
+    at:contributedBy atp:Goetze_Doreen, atp:Weidner_Thomas ;
+    at:hasXMLFile "S11.Berechenbarkeit.4-3.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/S11.Berechenbarkeit> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Machine.Numerical.Turing-Maschine> ;
+    a at:Config ;
+    rdfs:label "S11.Berechenbarkeit.4-3" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/S11.Berechenbarkeit.5-2>
+    at:Aufgabenstellung "Konstruieren Sie eine Turingmaschine für die Sprache {w | w ist nicht vv für alle v} über dem Alphabet {a,b}." ;
+    at:contributedBy atp:Goetze_Doreen, atp:Weidner_Thomas ;
+    at:hasXMLFile "S11.Berechenbarkeit.5-2.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/S11.Berechenbarkeit> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Acceptor-Turing.Quiz> ;
+    a at:Config ;
+    rdfs:label "S11.Berechenbarkeit.5-2" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/S11.Berechenbarkeit.5-3>
+    at:Aufgabenstellung "Konstruieren Sie eine deterministische Turingmaschine mit höchstens 4 Zuständen und \"dead-end\" Finalzuständen für f(x1,x2)=x1^x2." ;
+    at:contributedBy atp:Goetze_Doreen, atp:Weidner_Thomas ;
+    at:hasXMLFile "S11.Berechenbarkeit.5-3.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/S11.Berechenbarkeit> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Machine.Numerical.Turing-Maschine> ;
+    a at:Config ;
+    rdfs:label "S11.Berechenbarkeit.5-3" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/W11.AuS.2-1>
+    at:Aufgabenstellung "Es ist ein deterministischer endlicher Automat über A={a,b} anzugeben, der die Sprache L={w ∈ A^* | w endet auf ba} erkennt." ;
+    at:contributedBy atp:Goetze_Doreen ;
+    at:hasXMLFile "W11.AuS.2-1.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/W11.AuS> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Convert_To_NFA.Check> ;
+    a at:Config ;
+    rdfs:label "W11.AuS.2-1" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/W11.AuS.2-2>
+    at:Aufgabenstellung "Es ist ein deterministischer endlicher Automat über A = {a, b, c} anzugeben, der die Sprache L={w ∈ A^* | #b(w) < 4} erkennt." ;
+    at:contributedBy atp:Goetze_Doreen ;
+    at:hasXMLFile "W11.AuS.2-2.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/W11.AuS> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Convert_To_NFA.Check> ;
+    a at:Config ;
+    rdfs:label "W11.AuS.2-2" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/W11.AuS.2-3>
+    at:Aufgabenstellung "Es ist ein deterministischer endlicher Automat über A = {a, b} anzugeben, der die Sprache L={w ∈ A^* | #a(w) und #b(w) haben denselben Rest bei Division durch 2} erkennt." ;
+    at:contributedBy atp:Goetze_Doreen ;
+    at:hasXMLFile "W11.AuS.2-3.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/W11.AuS> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Convert_To_NFA.Check> ;
+    a at:Config ;
+    rdfs:label "W11.AuS.2-3" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/W11.AuS.2-4>
+    at:Aufgabenstellung "Es ist ein deterministischer endlicher Automat über A = {a, b} anzugeben, der die Sprache L={w ∈ A^* | w endet nicht auf bab} erkennt. " ;
+    at:contributedBy atp:Goetze_Doreen ;
+    at:hasXMLFile "W11.AuS.2-4.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/W11.AuS> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Convert_To_NFA.Check> ;
+    a at:Config ;
+    rdfs:label "W11.AuS.2-4" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/W11.AuS.3-1>
+    at:Aufgabenstellung "Es ist ein nichtdeterministischer endlicher Automat über A = {a, b, c} anzugeben, der die Sprache L={wx ∈ A^* |  x ∈ A kommt in w vor} erkennt." ;
+    at:contributedBy atp:Goetze_Doreen ;
+    at:hasXMLFile "W11.AuS.3-1.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/W11.AuS> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Convert_To_NFA.Check> ;
+    a at:Config ;
+    rdfs:label "W11.AuS.3-1" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/W11.AuS.3-2>
+    at:Aufgabenstellung "Es ist ein nichtdeterministischer endlicher Automat über A = {a, b, c} anzugeben, der die Sprache L={wx ∈ A^* |  x ∈ A kommt in w nicht vor} erkennt." ;
+    at:contributedBy atp:Goetze_Doreen ;
+    at:hasXMLFile "W11.AuS.3-2.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/W11.AuS> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Convert_To_NFA.Check> ;
+    a at:Config ;
+    rdfs:label "W11.AuS.3-2" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/W11.AuS.3-3>
+    at:Aufgabenstellung "Es ist ein nichtdeterministischer endlicher Automat über A = {0,1} anzugeben, der die Sprache L(10+((1+0)0)*1) erkennt." ;
+    at:contributedBy atp:Goetze_Doreen ;
+    at:hasXMLFile "W11.AuS.3-3.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/W11.AuS> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Convert_To_NFA.Check> ;
+    a at:Config ;
+    rdfs:label "W11.AuS.3-3" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/W11.AuS.3-4>
+    at:Aufgabenstellung "Es ist ein nichtdeterministischer endlicher Automat über A = {0,1} anzugeben, der die Sprache L(((0+1)(0+1))*+((0+1)(0+1)(0+1))*) erkennt." ;
+    at:contributedBy atp:Goetze_Doreen ;
+    at:hasXMLFile "W11.AuS.3-4.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/W11.AuS> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Convert_To_NFA.Check> ;
+    a at:Config ;
+    rdfs:label "W11.AuS.3-4" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/W11.AuS.4-1>
+    at:Aufgabenstellung "Sei L ⊆ {a, b}* die durch den rationalen Ausdruck (a + bb)* beschriebene Sprache. Geben Sie drei verschiedene Wörter w ∈ {a, b}* mit |w| ≥ 6 an, für die ab R_L w gilt." ;
+    at:contributedBy atp:Goetze_Doreen ;
+    at:hasXMLFile "W11.AuS.4-1.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/W11.AuS> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/NFA.Nerode.Congruent.Check> ;
+    a at:Config ;
+    rdfs:label "W11.AuS.4-1" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/W11.AuS.4-2>
+    at:Aufgabenstellung "Sei L ⊆ {a, b}* die durch den regulären Ausdruck (aa + bbb)* beschriebene Sprache. Geben Sie vier verschiedene Wörter u0,u1,u2,u3 ∈ {a, b}* an, so dass u0, u1, u2 und u3 paarweise nicht äquivalent sind, also so dass für alle i,j ∈ {0,..,3} mit i<j nicht gilt: ui R_L uj. Geben Sie für jedes dieser Paare (i,j) ein Wort w an für das gilt: ui.w ist in L genau dann, wenn uj.w ist nicht in L." ;
+    at:contributedBy atp:Goetze_Doreen ;
+    at:hasXMLFile "W11.AuS.4-2.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/W11.AuS> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/NFA.Nerode.Incongruent.Check> ;
+    a at:Config ;
+    rdfs:label "W11.AuS.4-2" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/W11.AuS.4-3>
+    at:Aufgabenstellung "Gesucht ist ein regulärer Ausdruck für eine Sprache L, so dass die Wörter u0=abb, u1=abab, u2=aaa paarweise nicht äquivalent sind. Geben Sie für jedes Paar (i,j) mit i<j ein Wort w an, so dass ui.w aus L ist genau dann wenn uj.w nicht aus L ist." ;
+    at:contributedBy atp:Goetze_Doreen ;
+    at:hasXMLFile "W11.AuS.4-3.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/W11.AuS> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/NFA.Nerode.Separation.Check> ;
+    a at:Config ;
+    rdfs:label "W11.AuS.4-3" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/W11.AuS.5-1>
+    at:Aufgabenstellung "AutoTool-Aufgabe 2#a(w)=#b(w)" ;
+    at:contributedBy atp:Goetze_Doreen ;
+    at:hasXMLFile "W11.AuS.5-1.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/W11.AuS> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/CFG2.Check> ;
+    a at:Config ;
+    rdfs:label "W11.AuS.5-1" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/W11.AuS.5-2>
+    at:Aufgabenstellung "Geben Sie für die Grammatik ({A,C,S,T},{a,b,c},{A->a,A->aA,C->cc,C->ccC,S->AT,S->ATC,T->ε, T->aTb},S) eine Grammatik in CNF an, die die gleiche Sprache erzeugt." ;
+    at:contributedBy atp:Goetze_Doreen ;
+    at:hasXMLFile "W11.AuS.5-2.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/W11.AuS> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/CFG2.Check> ;
+    a at:Config ;
+    rdfs:label "W11.AuS.5-2" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/W11.AuS.5-3>
+    at:Aufgabenstellung "Geben Sie eine kontextfreie Grammatik in CNF für die Sprache {w ∈ {a,b}* | w=w_1...w_n mit w_1...w_n ≠ w_n...w_1 und w_1,...,w_n  ∈  {a,b}} an." ;
+    at:contributedBy atp:Goetze_Doreen ;
+    at:hasXMLFile "W11.AuS.5-3.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/W11.AuS> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/CFG2.Check> ;
+    a at:Config ;
+    rdfs:label "W11.AuS.5-3" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/W11.AuS.6-1>
+    at:Aufgabenstellung "Es ist ein NEA über dem Alphabet A={a,b,c} anzugeben, der die Sprache L={ubv | u∈{a,c}* und v∈A* so dass gilt: wenn 2 teilt #_c(u), dann nicht v∈A*c} erkennt." ;
+    at:contributedBy atp:Goetze_Doreen ;
+    at:hasXMLFile "W11.AuS.6-1.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/W11.AuS> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Convert_To_NFA.Check> ;
+    a at:Config ;
+    rdfs:label "W11.AuS.6-1" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/W11.AuS.6-2>
+    at:Aufgabenstellung "Gesucht ist ein regulärer Ausdruck für die Sprache L={w∈{a,b,c}* | w enthält nicht aba}." ;
+    at:contributedBy atp:Goetze_Doreen ;
+    at:hasXMLFile "W11.AuS.6-2.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/W11.AuS> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Convert_To_Exp.Check> ;
+    a at:Config ;
+    rdfs:label "W11.AuS.6-2" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/W11.AuS.6-3>
+    at:Aufgabenstellung "AutoTool-Aufgabe GNF" ;
+    at:contributedBy atp:Goetze_Doreen ;
+    at:hasXMLFile "W11.AuS.6-3.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/W11.AuS> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/CFG2.Check> ;
+    a at:Config ;
+    rdfs:label "W11.AuS.6-3" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/W11.DS.A01>
+    at:Aufgabenstellung "Mengentheoretische Ausdrücke 1" ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasXMLFile "W11.DS.A01.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/W11.DS> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Algebraic_Set.Check> ;
+    a at:Config ;
+    rdfs:label "W11.DS.A01" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/W11.DS.A02>
+    at:Aufgabenstellung "Mengentheoretische Ausdrücke 2" ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasXMLFile "W11.DS.A02.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/W11.DS> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Algebraic_Set.Check> ;
+    a at:Config ;
+    rdfs:label "W11.DS.A02" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/W11.DS.A03>
+    at:Aufgabenstellung "Rückführung Disjunktion auf Implikation und Negation" ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasXMLFile "W11.DS.A03.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/W11.DS> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Boolean2.Check> ;
+    a at:Config ;
+    rdfs:label "W11.DS.A03" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/W11.DS.A04>
+    at:Aufgabenstellung "Rückführung Konjunktion auf Implikation und Negation" ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasXMLFile "W11.DS.A04.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/W11.DS> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Boolean2.Check> ;
+    a at:Config ;
+    rdfs:label "W11.DS.A04" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/W11.DS.A05>
+    at:Aufgabenstellung "Aussagenlogische Umformung" ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasXMLFile "W11.DS.A05.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/W11.DS> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Boolean2.Check> ;
+    a at:Config ;
+    rdfs:label "W11.DS.A05" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/W11.DS.A06>
+    at:Aufgabenstellung "Personenbezogene Umformungsaufgabe" ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasXMLFile "W11.DS.A06.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/W11.DS> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Boolean2.Quiz> ;
+    a at:Config ;
+    rdfs:label "W11.DS.A06" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/W11.DS.A07>
+    at:Aufgabenstellung "Umwandlung in KNF" ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasXMLFile "W11.DS.A07.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/W11.DS> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Boolean2.Check> ;
+    a at:Config ;
+    rdfs:label "W11.DS.A07" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/W11.DS.A08>
+    at:Aufgabenstellung "Umwandlung in KNF (Quiz)" ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasXMLFile "W11.DS.A08.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/W11.DS> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Boolean2.Quiz> ;
+    a at:Config ;
+    rdfs:label "W11.DS.A08" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/W12.AuS.A01>
+    at:Aufgabenstellung """Gesucht ist ein endlicher Automat, der die Sprache aller Wörter über {a,b,c}, die kein bab enthalten, akzeptiert und folgende Eigenschaften hat:
+    [ Alphabet
+          (mkSet "abc")
+    , Deterministic , Complete
+    ]
+
+Bemerkung: Überlegen Sie sich den Zusammenhang zwischen der geforderten Sprache und derjenigen, die alle Wörter _mit_ mindestens einem Teilwort `bab' umfasst. Bedenken Sie dann den Zusammenhang zwischen akzeptierenden und nicht akzeptierenden Zuständen mit der akzeptierten Sprache eines Automaten.""" ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasXMLFile "W12.AuS.A01.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/W12.AuS> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Convert_To_NFA.Check> ;
+    a at:Config ;
+    rdfs:label "W12.AuS.A01" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/W12.AuS.A02>
+    at:Aufgabenstellung """Gesucht ist ein endlicher Automat, der die Sprache der Wörter aus {a,c}* oder aus  { ubv | u aus {a,c}*, v aus {a,b,c}*, so dass gilt: wenn 2 | |u|_c, dann ist v nicht aus {a,b,c}*{c} } akzeptiert und folgende Eigenschaften hat:
+    [ Alphabet (mkSet "abc") ]
+
+Bemerkung: Verstehen Sie zunächst die beschriebene Sprache in Form einer Wenn-Dann-Aussage. Der formale Ausdruck |u|_c steht für die Anzahl von c's in u. Das zweite Auftreten des Zeichens | ist als Teilbarkeit zu lesen. 0 gilt in dieser Aufgabe auch als durch 2 teilbar. """ ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasXMLFile "W12.AuS.A02.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/W12.AuS> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Convert_To_NFA.Check> ;
+    a at:Config ;
+    rdfs:label "W12.AuS.A02" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/W12.AuS.A03>
+    at:Aufgabenstellung """Gesucht ist ein endlicher Automat, der die von folgendem Automaten:
+        NFA
+            { alphabet = mkSet "ab" , states = mkSet [ 1 , 2 , 3 , 4 ]
+            , starts = mkSet [ 3 ] , finals = mkSet [ 1 ]
+            , trans = collect [ ( 1 , 'a' , 1 ) , ( 2 , 'b' , 1 )
+                              , ( 2 , 'b' , 4 ) , ( 3 , 'a' , 2 ) , ( 3 , 'a' , 4 )
+                              , ( 4 , 'a' , 3 ) , ( 4 , 'b' , 1 ) , ( 4 , 'b' , 3 )
+                              ]
+            }
+ akzeptierte Sprache akzeptiert und folgende Eigenschaften hat:
+    [ Alphabet
+          (mkSet "ab")
+    , Deterministic , Complete
+    ]
+
+Bemerkung: Wenden Sie die Potenzautomatenkonstruktion zur Lösung an. """ ;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasXMLFile "W12.AuS.A03.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/W12.AuS> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Convert_To_NFA.Quiz> ;
+    a at:Config ;
+    rdfs:label "W12.AuS.A03" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/W12.AuS.A04>
+    at:Aufgabenstellung """Gesucht ist ein endlicher Automat, der die Sprache des folgenden Epsilon-Automaten (Überführungsfunktion, -> kennzeichnet Startzustand, * Endzustände):
+     
+          |   a     b   epsilon
+       -----------------------
+       0  |  {5}   {}    {1}
+       1  |  {}    {3}   {4}
+    -> 2  |  {5}   {}    {1}
+       3  |  {}    {6}   {0}
+       4  |  {5}   {}    {}
+       5  |  {}    {}    {4,5,6}
+      *6  |  {}    {}    {}
+     
+akzeptiert und folgende Eigenschaften hat:
+    [ Alphabet (mkSet "ab") , Sane , Min_Size 5 , Max_Size 5 , Deterministic ]
+
+Bemerkung: Konstruieren Sie den Automaten entsprechend des aus Vorlesung bzw. Übung bekannten Verfahrens, um direkt aus einem eNEA einen DEA zu erhalten. """;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasXMLFile "W12.AuS.A04.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/W12.AuS> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Convert_To_NFA.Check> ;
+    a at:Config ;
+    rdfs:label "W12.AuS.A04" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/W12.AuS.A05>
+    at:Aufgabenstellung """Gesucht ist ein endlicher Automat, der die Sprache des folgenden Epsilon-Automaten (Überführungsfunktion, -> kennzeichnet Startzustand, * Endzustände):
+     
+          |   0     1   epsilon
+       -----------------------
+    -> 0  |  {0}   {2,4} {3}
+      *1  |  {}    {}    {4}
+       2  |  {}    {}    {6}
+      *3  |  {0}   {1}   {}
+       4  |  {}    {}    {5}
+       5  |  {3}   {}    {1}
+      *6  |  {}    {}    {}
+     
+akzeptiert und folgende Eigenschaften hat:
+
+    [ Alphabet (mkSet "01") , Sane , Reduced , Min_Size 5 , Max_Size 5 ,
+          Non_Deterministic ]
+
+Bemerkung: Konstruieren Sie den Automaten entsprechend des aus Vorlesung bzw. Übung bekannten Verfahrens, um direkt aus einem eNEA einen NEA zu erhalten. Lassen Sie bei der Eingabe ins Autotool alle unerreichbar gewordenen Zustände entfallen. """;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasXMLFile "W12.AuS.A05.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/W12.AuS> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Convert_To_NFA.Check> ;
+    a at:Config ;
+    rdfs:label "W12.AuS.A05" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/W12.AuS.A06>
+    at:Aufgabenstellung """Gesucht ist ein endlicher Automat, der die Sprache des Durchschnitts von
+    L1 = a*bb*  und  L2 = { w | Die Anzahl von a's in w ist gerade (inkl. 0) }.
+akzeptiert und folgende Eigenschaften hat:
+
+    [ Alphabet (mkSet "ab") , Sane , Deterministic , Min_Size 4 ]
+
+Bemerkung:
+
+Entwerfen Sie zwei DEAs A1, A2 über {a, b} für die Sprachen
+L1 = a*bb*   und
+L2 = { w | Die Anzahl von a's in w ist gerade (inkl. 0) }
+
+Entwickeln Sie aus A1 und A2 einen Automaten für den Durchschnitt von L1 und L2 über die Produktautomatenkonstruktion und geben Sie diesen als Lösung an.
+
+Wenn Sie diesem Verfahren folgen, wird Ihre (nicht reduzierte) Lösung mindestens 4 Zustände aufweisen. Beachten Sie bei der Konstruktion ggf. den Umgang mit fehlenden Kanten, im Fall nicht vollständiger Automaten A1 oder A2. """;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasXMLFile "W12.AuS.A06.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/W12.AuS> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Convert_To_NFA.Check> ;
+    a at:Config ;
+    rdfs:label "W12.AuS.A06" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/W12.AuS.A07>
+    at:Aufgabenstellung """Gesucht ist ein regulärer Ausdruck, der die selbe Sprache wie der Ausdruck
+    (a + b + (a^* b^* + Eps)^* + b) (a + c)^* (ac + c + cc)
+    +
+    (a + Eps) Empty a^* (a + c + b + c)
+der Größe 46 erzeugt und die Eigenschaften
+
+    [ Simple , Alphabet (mkSet "abc") , AllowedKeys (mkSet [ "Empty" , "Eps" ]) , Max_Size 25 ]
+
+hat. """;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasXMLFile "W12.AuS.A07.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/W12.AuS> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Exp_Smaller.Check> ;
+    a at:Config ;
+    rdfs:label "W12.AuS.A07" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/W12.AuS.A08>
+    at:Aufgabenstellung """Gesucht ist ein endlicher Automat, der die von diesem Ausdruck:
+        ((bb)^* + ((bb)^* a)^*) a
+erzeugte Sprache akzeptiert und folgende Eigenschaften hat:
+    [ Alphabet (mkSet "ab") , Sane ]
+
+Bemerkung: Vereinfachen Sie den Ausdruck, sofern möglich, bevor Sie mit dem Automaten beginnen.  Beachten Sie, dass Sie keinen Epsilon-Automaten angeben können. Ggf. wandeln Sie diesen in einen NEA um.  """;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasXMLFile "W12.AuS.A08.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/W12.AuS> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Convert_To_NFA.Quiz> ;
+    a at:Config ;
+    rdfs:label "W12.AuS.A08" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/W12.AuS.A09>
+    at:Aufgabenstellung """Gesucht ist ein endlicher Automat, der die von diesem Ausdruck:
+        (b (b + a)^* + aa)^* + a
+erzeugte Sprache akzeptiert und folgende Eigenschaften hat:
+
+    [ Alphabet (mkSet "ab") , Sane , Deterministic , Minimal ]
+
+Bemerkung: Vereinfachen Sie den Ausdruck, sofern möglich, bevor Sie mit dem Automaten beginnen. """;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasXMLFile "W12.AuS.A09.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/W12.AuS> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Convert_To_NFA.Quiz> ;
+    a at:Config ;
+    rdfs:label "W12.AuS.A09" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/W12.AuS.A10>
+    at:Aufgabenstellung """Gesucht ist eine kontextfreie Grammatik für die Sprache
+    { w : w = xcy  und  |x|=|y| }
+über dem Alphabet mkSet "abc". 
+
+Die Grammatik soll diese Eigenschaften haben: [ Kontextfrei ] """;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasXMLFile "W12.AuS.A10.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/W12.AuS> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/CFG2.Check> ;
+    a at:Config ;
+    rdfs:label "W12.AuS.A10" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/W12.AuS.A11>
+    at:Aufgabenstellung """Gesucht ist eine kontextfreie Grammatik für die durch den Ausdruck
+(b + a)^* a a (a + b)^* beschriebene Sprache über dem Alphabet mkSet "ab"
+
+Die Grammatik soll diese Eigenschaften haben: [ Kontextfrei , Rechtslinear ]
+
+Bemerkung: Die Eigenschaft "Rechtslinear" im Autotool entspricht in der Vorlesung der Eigenschaft "regulär". """;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasXMLFile "W12.AuS.A11.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/W12.AuS> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/CFG2.Check> ;
+    a at:Config ;
+    rdfs:label "W12.AuS.A11" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/W12.AuS.A12>
+    at:Aufgabenstellung """Gesucht ist eine kontextfreie Grammatik für die durch den Ausdruck
+a^* b^* b (Eps + a (a + b)^*) beschriebene Sprache über dem Alphabet mkSet "ab"
+
+Die Grammatik soll diese Eigenschaften haben: [ Kontextfrei , Rechtslinear ]
+
+Empfehlung: Betrachten Sie statt des technisch nötigen regulären Ausdrucks den folgenden äquivalenten endlichen Automaten und folgen Sie dem Verfahren aus der Vorlesung, diesen in eine reguläre Grammatik zu überführen.
+
+gegeben: Überführungsfunktion, -> kennzeichnet Startzustand, * Endzustände:
+
+      |  a    b 
+   --------------
+-> 0  |  0    1
+ * 1  |  2    1
+ * 2  |  2    2
+ """;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasXMLFile "W12.AuS.A12.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/W12.AuS> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/CFG2.Check> ;
+    a at:Config ;
+    rdfs:label "W12.AuS.A12" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/W12.AuS.A13>
+    at:Aufgabenstellung """Gesucht ist eine kontextfreie Grammatik für die durch die Grammatik
+        { terminale = mkSet "abc" , variablen = mkSet "ACST" , start = 'S'
+        , regeln = mkSet [ ( "A" , "a" ) , ( "A" , "aA" ) , ( "C" , "cc" )
+                         , ( "C" , "ccC" ) , ( "S" , "AT" ) , ( "S" , "ATC" ) , ( "T" , "" )
+                         , ( "T" , "aTb" )
+                         ]
+        }
+erzeugte Sprache über dem Alphabet mkSet "abc"
+
+Die Grammatik soll diese Eigenschaften haben: [ Kontextfrei , Chomsky_Normal ] """;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasXMLFile "W12.AuS.A13.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/W12.AuS> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/CFG2.Check> ;
+    a at:Config ;
+    rdfs:label "W12.AuS.A13" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/W12.AuS.A14>
+    at:Aufgabenstellung """Gesucht ist eine kontextfreie Grammatik für die Sprache
+    { w : |w|_a = 2|w|_b } über dem Alphabet mkSet "ab"
+
+Die Grammatik soll diese Eigenschaften haben: [ Kontextfrei ] """;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasXMLFile "W12.AuS.A14.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/W12.AuS> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/CFG2.Check> ;
+    a at:Config ;
+    rdfs:label "W12.AuS.A14" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/W12.AuS.A15>
+    at:Aufgabenstellung """Gesucht ist ein regulärer Ausdruck, der die Sprache
+    Wörter über {a,b,c}, die kein  bab  enthalten
+erzeugt und folgende Eigenschaften hat:
+
+    [ Simple , Alphabet (mkSet "abc") , AllowedKeys (mkSet [ "Empty" , "Eps"  ]) ]
+
+Bemerkung: Empfehlung: Wandeln Sie den zugehörigen DEA (Lösung aus Aufgabe A01) in einen RA um. """;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasXMLFile "W12.AuS.A15.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/W12.AuS> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Convert_To_Exp.Check> ;
+    a at:Config ;
+    rdfs:label "W12.AuS.A15" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/W12.AuS.A16>
+    at:Aufgabenstellung """Gesucht ist ein Kellerautomat für die Sprache
+    { w : |w|_a = |w|_b } über dem Alphabet mkSet "ab" mit diesen Eigenschaften [ ]
+
+Bemerkung: Empfehlung: Lösen Sie die Aufgabe unmittelbar mit Kellerautomaten, anstatt z.B. eine Grammatik für die Sprache in einen Kellerautomaten umzuwandeln. """;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasXMLFile "W12.AuS.A16.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/W12.AuS> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Acceptor-NPDA.Check> ;
+    a at:Config ;
+    rdfs:label "W12.AuS.A16" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/W12.AuS.A17>
+    at:Aufgabenstellung """Gesucht ist ein Kellerautomat für die durch die Grammatik
+        { terminale = mkSet "abc" , variablen = mkSet "ABCST" , start = 'S'
+        , regeln = mkSet [ ( "A" , "a" ) , ( "A" , "aA" ) , ( "B" , "b" )
+                         , ( "B" , "bB" ) , ( "C" , "" ) , ( "C" , "cC" ) , ( "S" , "ATC" )
+                         , ( "S" , "TBC" ) , ( "S" , "ca" ) , ( "T" , "aTb" )
+                         , ( "T" , "ab" )
+                         ]
+        }
+erzeugte Sprache über dem Alphabet mkSet "abc" mit diesen Eigenschaften 
+
+[ Accept_by Empty_Stack ]
+
+Bemerkung: ACHTUNG: Die eigentliche Aufgabe hier lautet: geben Sie einen Kellerautomaten an, der die Sprache L mit leerem Keller akzeptiert, wobei L definiert ist durch: { a^i b^j c^k | i != j und i,j > 0 } vereinigt mit { ca } Lassen Sie beim Lösen die in der Autotool-Aufgabenstellung ersichtliche Grammatik außer Acht und konstruieren Sie einen Automaten mit mehreren Zuständen. """;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasXMLFile "W12.AuS.A17.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/W12.AuS> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Acceptor-NPDA.Check> ;
+    a at:Config ;
+    rdfs:label "W12.AuS.A17" .
+
+<http://hgg.ontowiki.net/autotool/Configuration/W12.AuS.A18>
+    at:Aufgabenstellung """Gesucht ist ein Kellerautomat für die durch die Grammatik
+        { terminale = mkSet "ab" , variablen = mkSet "ST" , start = 'S'
+        , regeln = mkSet [ ( "S" , "TT" ) , ( "S" , "a" ) , ( "T" , "SS" )
+                         , ( "T" , "b" )
+                         ]
+        }
+erzeugte Sprache über dem Alphabet mkSet "ab" mit diesen Eigenschaften [ ]
+
+Bemerkung: Zu dieser Aufgabe: folgen Sie hier dem Verfahren aus der Vorlesung zur Umwandlung von kontextfreien Grammatiken in Kellerautomaten. Überlegen Sie sich bzw. überprüfen Sie die passende Akzeptanzbedingung. """;
+    at:contributedBy atp:Loebe_Frank ;
+    at:hasXMLFile "W12.AuS.A18.xml" ;
+    at:relatedCourse <http://hgg.ontowiki.net/autotool/Course/W12.AuS> ;
+    at:relatedItem <http://hgg.ontowiki.net/autotool/Type/Acceptor-NPDA.Check> ;
+    a at:Config ;
+    rdfs:label "W12.AuS.A18" .
+
+at:Course
+    a owl:Class ;
+    rdfs:comment "Kurs, in dem die Konfiguration eingesetzt wurde" ;
+    rdfs:label "Kurs" .
+
+<http://hgg.ontowiki.net/autotool/Course/S10.Ber>
+    at:designedBy atp:Loebe_Frank ;
+    at:hasTitle "Berechenbarkeit" ;
+    a at:Course ;
+    rdfs:comment "Übungen zum Kurs \"Berechenbarkeit\" von Prof. G. Brewka, Sommersemester 2010, Institut für Informatik, Uni Leipzig" .
+
+<http://hgg.ontowiki.net/autotool/Course/S11.Berechenbarkeit>
+    at:designedBy atp:Goetze_Doreen, atp:Weidner_Thomas ;
+    at:hasTitle "Berechenbarkeit" ;
+    a at:Course ;
+    rdfs:comment "Übungen zum Kurs \"Berechenbarkeit\" von Prof. Droste, Sommersemester 2011, Institut für Informatik, Uni Leipzig" .
+
+<http://hgg.ontowiki.net/autotool/Course/W11.AuS>
+    at:designedBy atp:Goetze_Doreen ;
+    at:hasTitle "Automaten und Sprachen" ;
+    a at:Course ;
+    rdfs:comment "Übungen zum Kurs \"Automaten und Sprachen\" bei Prof. Dr. Lohrey, Wintersemester 2011/12, Institut für Informatik, Uni Leipzig" .
+
+<http://hgg.ontowiki.net/autotool/Course/W12.AuS>
+    at:designedBy atp:Loebe_Frank ;
+    at:hasTitle "Automaten und Sprachen" ;
+    a at:Course ;
+    rdfs:comment "Übungen zum Kurs \"Automaten und Sprachen\" bei Prof. Dr. Brewka, Wintersemester 2012/13, Institut für Informatik, Uni Leipzig" .
+
+<http://hgg.ontowiki.net/autotool/Course/W11.DS>
+    at:designedBy atp:Loebe_Frank ;
+    at:hasTitle "Diskrete Strukturen" ;
+    a at:Course ;
+    rdfs:comment "Übungen zum Kurs \"Diskrete Strukturen\" von Prof. G. Brewka, Wintersemester 2011/12, Institut für Informatik, Uni Leipzig" .
+
+at:Person
+    a owl:Class ;
+    rdfs:label "Person" .
+
+atp:Goetze_Doreen
+    a at:Person ;
+    rdfs:comment "Uni Leipzig, Theoretische Informatik" ;
+    rdfs:label "Götze, Doreen" .
+
+atp:Loebe_Frank
+    a at:Person ;
+    rdfs:comment "Uni Leipzig, Theoretische Informatik" ;
+    rdfs:label "Loebe, Frank" .
+
+atp:Weidner_Thomas
+    a at:Person ;
+    rdfs:comment "Uni Leipzig, Theoretische Informatik" ;
+    rdfs:label "Weidner, Thomas" .
+
